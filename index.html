@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="jumbotron">
+    <p id="text"></p>
+</div>
+<div><button id="sum" onclick="sum()">Сумма</button></div>
+<section class="projects">
+    <div class="container">
+        <div class="projects__inner">
+            <div class="project__item">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/882/882991.svg" alt=""
+                     class="img projects__img">
+                <div class="project__content">
+                    <div class="content__transparent">transparent</div>
+                    <div class="project__info">
+                        <h3>Траверс</h3>
+                        <p class="projects__text">Какая-то железка</p>
+                        <div class="projects__btn">
+                            <button class="btn btn--sm btn__animate" onclick="squareTravers()">Добавить</button>
+                            <label>
+                                <input placeholder="Кол-во деталей" class="txt__input_quantity" id="travers">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project__item">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/3081/3081530.svg" alt=""
+                     class="img projects__img">
+                <div class="project__content">
+                    <div class="content__transparent">transparent</div>
+                    <div class="project__info">
+                        <a class="projects__title" href="https://github.com/DzmityKozich/Animation" target="_blank">
+                            <h3>Hearts animation</h3>
+                        </a>
+                        <p class="projects__text">Just funny application
+                        </p>
+                        <div class="projects__btn">
+                            <button class="btn btn--sm btn__animate" onclick="squareCircle()">Добавить</button>
+                            <label>
+                                <input placeholder="Кол-во деталей" class="txt__input_quantity" id="circle">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project__item">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/2907/2907318.svg" alt=""
+                     class="img projects__img">
+                <div class="project__content">
+                    <div class="content__transparent">transparent</div>
+                    <div class="project__info">
+                        <a href="https://github.com/DzmityKozich/Resume" target="_blank" class="projects__title">
+                            <h3>Portfolio</h3>
+                        </a>
+                        <p class="projects__text">My portfolio site
+                        </p>
+                        <div class="projects__btn">
+                            <button class="btn btn--sm btn__animate" onclick="squareBigCircle()">Добавить</button>
+                            <label>
+                                <input placeholder="Кол-во деталей" class="txt__input_quantity" id="big-circle">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- / .header__inner -->
+    </div> <!-- / .container -->
+</section> <!-- / .projects -->
+<script src="./script.js"></script>
+<script src="./all-square.js"></script>
+</body>
+</html>
