@@ -215,13 +215,17 @@ body {
 }
 
 @media (max-width: 680px) {
+    .calculate__btn {
+        text-align: center;
+    }
+
     .details__inner {
-        flex-direction: column;
-        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .detail__item {
-        width: 70%;
+        width: 100%;
         height: 400px;
     }
 
