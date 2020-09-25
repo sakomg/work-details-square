@@ -28,14 +28,17 @@ body {
 #squareSymbol {
     font-size: 25px;
     display: inline-block;
+    color: #efeff3;
 }
 
 #text {
     display: inline-block;
+    color: #efeff3;
 }
 
 #sumText {
     display: inline-block;
+    color: #efeff3;
 }
 
 .btn {
@@ -98,7 +101,7 @@ body {
 }
 
 .details {
-    padding: 120px 0;
+    padding: 50px 0;
     width: 100%;
     height: 100%;
 }
@@ -106,20 +109,19 @@ body {
 .details__inner {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .detail__item {
     position: relative;
-    width: 25%;
-    height: 320px;
+    width: 100%;
+    height: 335px;
     border: 2px #efeff3 solid;
     border-radius: 8px;
     overflow: hidden;
     transition: 0.1s cubic-bezier(0.4, 0, 1, 1);
-    margin: 0 auto;
 }
 
 .detail__item:hover {
@@ -273,22 +275,96 @@ body {
 .txt__input_quantity {
     float: left;
     height: 38.78px;
-    width: 125px;
+    width: 120px;
     padding: 5px;
     border: 3px #1b1f23 solid;
 }
 
 .jumbotron {
     padding: 4rem 1rem;
-    background-color: #e9ecef;
+    background-color: #232833;
     border-radius: 8px;
-
 }
 
 .calculate__btn {
-    padding: 10px;
+    padding: 10px 0;
 }
 
-.search {
+#search {
+    height: 38.78px;
+    font-size: 16px;
+    width: 400px;
+    padding: 5px;
+    border: 3px #1b1f23 solid;
+}
+
+.container__search {
     margin: 0 auto;
+    overflow: hidden;
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.container__search input#search {
+    width: 300px;
+    height: 38.78px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #fff;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.container__search input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.container__search input#search:-moz-placeholder { /* Firefox 18- */
+    color: #65737e;
+}
+
+.container__search input#search::-moz-placeholder { /* Firefox 19+ */
+    color: #65737e;
+}
+
+.container__search input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+
+.container__search button.icon {
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    border: none;
+    background: #232833;
+    height: 38.78px;
+    width: 38.78px;
+    color: #4f5b66;
+    opacity: 0;
+    font-size: 10pt;
+
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+
+.container__search:hover button.icon, .container__search:active button.icon, .container__search:focus button.icon {
+    outline: none;
+    opacity: 1;
+    margin-left: -38.78px;
+}
+
+.container__search:hover button.icon:hover {
+    background: white;
 }
