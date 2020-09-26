@@ -15,12 +15,13 @@
 <body>
 <div class="container__result">
     <div class="jumbotron">
-        <p id="squareSymbol">S: </p>
+        <p id="squareSymbol">S:</p>
         <p id="text"></p>
         <p id="sumText"></p>
     </div>
     <div class="calculate__btn">
-        <button class="btn btn--sm btn__animate" id="sum" onclick="sumSquareDetails()">Сумма</button>
+        <button class="btn btn--sm btn__animate" id="sum" style="margin-right: 5px;" onclick="sumSquareDetails()">Сумма
+        </button>
         <button class="btn btn--sm btn__animate" id="clear" onclick="clearSquareDetails()">Очистить</button>
     </div>
     <div class="container__search">
@@ -39,13 +40,17 @@
                 <div class="detail__content">
                     <div class="content__transparent">transparent</div>
                     <div class="detail__info">
-                        <h3>Траверс</h3>
+                        <h3 class="details__title">Траверс</h3>
                         <p class="details__text">S = 0.024м²</p>
                         <div class="details__btn">
-                            <button class="btn btn--sm btn__animate" onclick="squareDetails(document.getElementById('travers').value, SQUARE_TRAVERS)">Добавить</button>
                             <label>
                                 <input placeholder="Кол-во деталей" class="txt__input_quantity" id="travers">
                             </label>
+                            <button
+                                    class="btn btn--sm btn__animate mobile-btn"
+                                    onclick="squareDetails(document.getElementById('travers').value, SQUARE_TRAVERS)">
+                                Добавить
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -57,13 +62,17 @@
                 <div class="detail__content">
                     <div class="content__transparent">transparent</div>
                     <div class="detail__info">
-                        <h3>Конусное кольцо</h3>
+                        <h3 class="details__title">Конусное кольцо</h3>
                         <p class="details__text">S = 0.015м²</p>
                         <div class="details__btn">
-                            <button class="btn btn--sm btn__animate" onclick="squareTaperedRing()">Добавить</button>
                             <label>
                                 <input placeholder="Кол-во деталей" class="txt__input_quantity" id="tapered-ring">
                             </label>
+                            <button
+                                    class="btn btn--sm btn__animate mobile-btn"
+                                    onclick="squareDetails(document.getElementById('tapered-ring').value, SQUARE_TAPERED_RING)">
+                                Добавить
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -75,13 +84,17 @@
                 <div class="detail__content">
                     <div class="content__transparent">transparent</div>
                     <div class="detail__info">
-                        <h3>Кольцо</h3>
+                        <h3 class="details__title">Кольцо</h3>
                         <p class="details__text">S = 0.118м²</p>
                         <div class="details__btn">
-                            <button class="btn btn--sm btn__animate" onclick="squareCircle()">Добавить</button>
                             <label>
                                 <input placeholder="Кол-во деталей" class="txt__input_quantity" id="circle">
                             </label>
+                            <button
+                                    class="btn btn--sm btn__animate mobile-btn"
+                                    onclick="squareDetails(document.getElementById('circle').value, SQUARE_CIRCLE)">
+                                Добавить
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -93,13 +106,17 @@
                 <div class="detail__content">
                     <div class="content__transparent">transparent</div>
                     <div class="detail__info">
-                        <h3>_Шестерёнка</h3>
+                        <h3 class="details__title">_Шестерёнка</h3>
                         <p class="details__text">S = 0.0854м²</p>
                         <div class="details__btn">
-                            <button class="btn btn--sm btn__animate" onclick="squareGearOpen()">Добавить</button>
                             <label>
                                 <input placeholder="Кол-во деталей" class="txt__input_quantity" id="gear-open">
                             </label>
+                            <button
+                                    class="btn btn--sm btn__animate mobile-btn"
+                                    onclick="squareDetails(document.getElementById('gear-open').value, SQUARE_GEAR_OPEN)">
+                                Добавить
+                            </button>
                         </div>
                     </div>
                 </div>
