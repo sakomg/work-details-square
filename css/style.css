@@ -493,11 +493,6 @@ body {
         width: 140px;
     }
 
-    /*.container__search input#search {*/
-    /*    width: 140px;*/
-    /*    float: right;*/
-    /*}*/
-
     .details__inner {
         grid-template-columns: 1fr;
         gap: 20px;
