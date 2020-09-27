@@ -425,21 +425,25 @@ body {
 
 @media (max-width: 530px) {
 
+    .jumbotron {
+        padding: 3rem 1rem;
+    }
+
     .container__search:hover button.icon, .container__search:active button.icon, .container__search:focus button.icon {
-        margin-left: -25px;
+        margin-left: -30px;
     }
 
     .container__search button.icon {
-        height: 25px;
-        width: 25px;
+        height: 30px;
+        width: 30px;
     }
 
     #search {
-        height: 25px;
+        height: 30px;
     }
 
     .container__search input#search {
-        height: 25px;
+        height: 30px;
     }
 
     .nav {
@@ -459,6 +463,7 @@ body {
 
     .container__search input#search {
         width: 140px;
+        height: 30px;
     }
 
     .container__result {
@@ -486,7 +491,7 @@ body {
 @media (max-width: 380px) {
 
     .txt__input_quantity {
-        height: 25px;
+        height: 30px;
     }
 
     .container__search {
@@ -508,5 +513,6 @@ body {
 
     .btn {
         font-size: 10px;
+        height: 30px;
     }
 }
