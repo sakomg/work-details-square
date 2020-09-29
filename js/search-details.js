@@ -27,5 +27,5 @@ function searchDetails(str) {
         alert("Opera browsers not supported, sorry...");
         return;
     }
-    if (!strFound) alert("String '" + str + "' not found!")
+    if (!strFound) alert("Строка '" + str + "' не найдена!")
 }
