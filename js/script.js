@@ -10,7 +10,7 @@ function squareDetails(quantity, square) {
         text.innerHTML += ' ' + result + 'м²';
     }
     equals.push(result);
-    return result;
+    return result.toFixed(4);
 }
 
 function sumSquareDetails() {
@@ -19,7 +19,7 @@ function sumSquareDetails() {
         sum += equals[i]
     }
     if (text.innerHTML !== '') {
-        sumText.innerHTML = ' = ' + sum + 'м²';
+        sumText.innerHTML = ' = ' + sum.toFixed(4) + 'м²';
         sumText.style.color = 'maroon';
     } else {
         alert('Выберете детали')
