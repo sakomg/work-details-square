@@ -1,6 +1,8 @@
 let text = document.getElementById('text');
 let sumText = document.getElementById('sumText');
+let search = document.getElementById('search');
 let equals = [];
+
 
 function squareDetails(quantity, square) {
     let result = square * quantity;
@@ -31,4 +33,11 @@ function clearSquareDetails() {
     sumText.innerHTML = '';
     equals = [];
 }
+
+search.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("search-btn").click();
+    }
+});
 
