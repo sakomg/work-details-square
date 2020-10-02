@@ -497,6 +497,7 @@ h4 {
 
     .txt__input_quantity {
         height: 30px;
+        font-size: 12px;
     }
 
     .container__search {
