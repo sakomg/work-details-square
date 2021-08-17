@@ -35,13 +35,37 @@
         <div class="details__inner">
 
             <div class="detail__item">
+                <img src="images/big-gear-d470.png" alt="big-gear-d470"
+                     class="img details__img">
+                <div class="detail__content">
+                    <div class="content__transparent">transparent</div>
+                    <div class="detail__info">
+                        <h3 class="details__title">Большая шестерня(D = 470)</h3>
+                        <p class="details__text">S = 0.25м²</p>
+                        <div class="details__btn">
+                            <label>
+                                <input
+                                        onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;"
+                                        placeholder="Кол-во деталей" class="txt__input_quantity" id="big-gear-d470">
+                            </label>
+                            <button
+                                    class="btn btn--sm btn__animate mobile-btn"
+                                    onclick="squareDetails(document.getElementById('big-gear-d470').value, SQUARE_BIG_GEAR_D470)">
+                                Добавить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail__item">
                 <img src="images/sleeve.png" alt="sleeve"
                      class="img details__img">
                 <div class="detail__content">
                     <div class="content__transparent">transparent</div>
                     <div class="detail__info">
-                        <h3 class="details__title">Маленький вал</h3>
-                        <p class="details__text">S = 0.02м²</p>
+                        <h3 class="details__title">Втулка</h3>
+                        <p class="details__text">S = 0.025м²</p>
                         <div class="details__btn">
                             <label>
                                 <input
@@ -50,7 +74,7 @@
                             </label>
                             <button
                                     class="btn btn--sm btn__animate mobile-btn"
-                                    onclick="squareDetails(document.getElementById('big-disk').value, SQUARE_SLEEVE)">
+                                    onclick="squareDetails(document.getElementById('sleeve').value, SQUARE_SLEEVE)">
                                 Добавить
                             </button>
                         </div>
@@ -74,7 +98,7 @@
                             </label>
                             <button
                                     class="btn btn--sm btn__animate mobile-btn"
-                                    onclick="squareDetails(document.getElementById('big-disk').value, SQUARE_SMALL_SHAFT)">
+                                    onclick="squareDetails(document.getElementById('small-shaft').value, SQUARE_SMALL_SHAFT)">
                                 Добавить
                             </button>
                         </div>
@@ -98,7 +122,7 @@
                             </label>
                             <button
                                     class="btn btn--sm btn__animate mobile-btn"
-                                    onclick="squareDetails(document.getElementById('big-disk').value, SQUARE_MEDIUM_SHAFT)">
+                                    onclick="squareDetails(document.getElementById('medium-shaft').value, SQUARE_MEDIUM_SHAFT)">
                                 Добавить
                             </button>
                         </div>
@@ -122,7 +146,7 @@
                             </label>
                             <button
                                     class="btn btn--sm btn__animate mobile-btn"
-                                    onclick="squareDetails(document.getElementById('big-disk').value, SQUARE_BIG_SHAFT)">
+                                    onclick="squareDetails(document.getElementById('big-shaft').value, SQUARE_BIG_SHAFT)">
                                 Добавить
                             </button>
                         </div>
@@ -146,7 +170,7 @@
                             </label>
                             <button
                                     class="btn btn--sm btn__animate mobile-btn"
-                                    onclick="squareDetails(document.getElementById('big-disk').value, SQUARE_CLIP)">
+                                    onclick="squareDetails(document.getElementById('clip').value, SQUARE_CLIP)">
                                 Добавить
                             </button>
                         </div>
@@ -170,7 +194,7 @@
                             </label>
                             <button
                                     class="btn btn--sm btn__animate mobile-btn"
-                                    onclick="squareDetails(document.getElementById('big-disk').value, SQUARE_MEDIUM_DISK)">
+                                    onclick="squareDetails(document.getElementById('medium-disk').value, SQUARE_MEDIUM_DISK)">
                                 Добавить
                             </button>
                         </div>
