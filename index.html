@@ -35,6 +35,54 @@
         <div class="details__inner">
 
             <div class="detail__item">
+                <img src="images/medium-disk.png" alt="medium-disk"
+                     class="img details__img">
+                <div class="detail__content">
+                    <div class="content__transparent">transparent</div>
+                    <div class="detail__info">
+                        <h3 class="details__title">Средний диск</h3>
+                        <p class="details__text">S = 0.0018м²</p>
+                        <div class="details__btn">
+                            <label>
+                                <input
+                                        onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;"
+                                        placeholder="Кол-во деталей" class="txt__input_quantity" id="medium-disk">
+                            </label>
+                            <button
+                                    class="btn btn--sm btn__animate mobile-btn"
+                                    onclick="squareDetails(document.getElementById('big-disk').value, SQUARE_MEDIUM_DISK)">
+                                Добавить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail__item">
+                <img src="images/big-disk.png" alt="big-disk"
+                     class="img details__img">
+                <div class="detail__content">
+                    <div class="content__transparent">transparent</div>
+                    <div class="detail__info">
+                        <h3 class="details__title">Большой диск</h3>
+                        <p class="details__text">S = 0.0294м²</p>
+                        <div class="details__btn">
+                            <label>
+                                <input
+                                        onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;"
+                                        placeholder="Кол-во деталей" class="txt__input_quantity" id="big-disk">
+                            </label>
+                            <button
+                                    class="btn btn--sm btn__animate mobile-btn"
+                                    onclick="squareDetails(document.getElementById('big-disk').value, SQUARE_BIG_DISK)">
+                                Добавить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail__item">
                 <img src="images/travers.jpg" alt="travers"
                      class="img details__img">
                 <div class="detail__content">
